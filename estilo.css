@@ -1,0 +1,20 @@
+
+.img {
+    background-image: url(./img/header.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.imgit{
+    width: 80%;
+    height: 80%;
+    margin: 40px;
+
+}
+
+.git {
+    width: 30%;
+    border: 1px;
+    display:flex;
+   
+}
