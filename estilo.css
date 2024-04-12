@@ -3,18 +3,95 @@
     background-image: url(./img/header.jpg);
     background-size: cover;
     text-align: center;
+    width: 100%;
 }
 
 .imgit{
-    width: 80%;
-    height: 80%;
-    margin: 40px;
+    width: 30%;
+    height: auto;
+    margin-right: 100px;
+    margin: auto;
 
+}
+
+.gititulo {
+    text-align: center;
 }
 
 .git {
-    width: 30%;
-    border: 1px;
-    display:flex;
-   
+    max-width: 70%;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente dentro del contenedor flex */
+  align-items: center; /* Centra verticalmente dentro del contenedor flex */
+  background-size: cover;
 }
+
+
+.colorfondo {
+    background-color: rgb(45, 145, 158);
+    text-align: center;
+    color: white;
+}
+
+.col2 {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    align-items: center;
+    max-width: 75%;
+    margin: auto;
+}
+
+.colarribapie {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    gap: 20px; 
+    background-color: rgba(148, 136, 136, 0.384);
+    width: 100%; /* Amplía el fondo de color al ancho completo */
+    padding: 20px 0; /* Agrega un espacio interno arriba y abajo */
+    margin-top: 20px;
+}
+
+.colorpie {
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 100%; /* Amplía el fondo de color al ancho completo */
+    padding: 20px 0; /* Agrega un espacio interno arriba y abajo */
+    margin-top: 20px;
+}
+
+.blanco {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .git, .colarribapie, .colorfondo, .col2 {
+        max-width: 100%; /* Establece el ancho máximo al 100% para adaptarse a pantallas pequeñas */
+        margin: 0 auto; /* Centra los contenedores horizontalmente */
+        padding: 0 20px; /* Agrega un espacio interno a los contenedores */
+        box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+    }
+    
+    .imgit {
+        width: 100%; /* el ancho para que ocupe toda la fila en dispositivos pequeños */
+        margin-bottom: 10px; 
+    }
+}
+
+
+.magra-regular {
+    font-family: "Magra", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .magra-bold {
+    font-family: "Magra", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
