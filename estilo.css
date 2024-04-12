@@ -61,26 +61,27 @@
     color: white;
     width: 100%; /* Amplía el fondo de color al ancho completo */
     padding: 20px 0; /* Agrega un espacio interno arriba y abajo */
-    margin-top: 20px;
 }
 
 .blanco {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
-    .git, .colarribapie, .colorfondo, .col2 {
-        max-width: 100%; /* Establece el ancho máximo al 100% para adaptarse a pantallas pequeñas */
-        margin: 0 auto; /* Centra los contenedores horizontalmente */
-        padding: 0 20px; /* Agrega un espacio interno a los contenedores */
-        box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+@media screen and (max-width:600px) {
+
+    .git, .col2, .colarribapie {
+        max-width: 100%; /* Ajusta el ancho máximo al 100% para dispositivos pequeños */
+        margin: auto; /* Centra el contenedor horizontalmente */
+        display: grid;
+        background-size: cover;
     }
-    
-    .imgit {
-        width: 100%; /* el ancho para que ocupe toda la fila en dispositivos pequeños */
-        margin-bottom: 10px; 
+
+    .img {
+        width: 100%;
+        margin: auto;
     }
 }
+    
 
 
 .magra-regular {
