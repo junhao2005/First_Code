@@ -69,10 +69,20 @@
 
 @media screen and (max-width:600px) {
 
-    .git, .col2, .colarribapie {
+    .col2, .colarribapie {
         max-width: 100%; /* Ajusta el ancho máximo al 100% para dispositivos pequeños */
         margin: auto; /* Centra el contenedor horizontalmente */
         display: grid;
+        background-size: cover;
+    }
+
+    .git {
+        max-width: 100%; /* Ajusta el ancho máximo al 100% para dispositivos pequeños */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); /* Dos columnas de igual ancho */
+        grid-template-rows: repeat(3, auto); /* Tres filas con altura automática */
+        gap: 20px; /* Espacio entre las celdas */
         background-size: cover;
     }
 
